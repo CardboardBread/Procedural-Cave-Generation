@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized * 10;
+        velocity = new Vector3(0, Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal")).normalized * 10;
     }
 
     void FixedUpdate()
